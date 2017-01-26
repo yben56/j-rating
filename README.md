@@ -31,6 +31,7 @@ $("#rating").jRating({
 ```
 
 ```php
+//backend(php)
 (backend will receive a radio button post or get)
 $_POST['j-rating']
 ```
