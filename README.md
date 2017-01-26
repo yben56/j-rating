@@ -2,7 +2,7 @@ J-Rating jquery Plugin
 ==============================
 
 ##Demo
-
+https://yben56.github.io/j-rating/
 
 ##Dependencies
 jquery-3.1.1 & Bootstrap v3.3.6
