@@ -1,0 +1,29 @@
+.j-rating {
+	font-size: 14px;
+	display: inline-block;
+}
+.j-rating input[type='radio'] {
+	display: none;
+}
+
+.j-rating label {
+	cursor: pointer;
+	color: #CCC;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.j-rating .on {
+	color: #660 !important;	
+}
+
+.j-rating .text {
+	margin-left: 5px;
+	padding: 0 5px;
+	color: #fff;
+	background-color: #f0ad4e;
+	border-radius: 3px;
+	cursor: default;
+	display: inline-block;
+	text-align: center;
+}

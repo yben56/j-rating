@@ -1,0 +1,22 @@
+body {
+	font-family: 'Heebo', sans-serif;
+}
+
+.container {
+	padding-top: 300px;	
+}
+
+.col-sm-12 {
+	text-align: center;	
+}
+
+.title {
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: 100;
+}
+
+.description {
+	text-align: center;
+	font-weight: 300;
+}
