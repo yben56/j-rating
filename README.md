@@ -11,8 +11,8 @@ jquery-3.1.1 & Bootstrap v3.3.6
 
 ```html
 //html
-<script type="text/javascript" src="src/ezAutoSuggestion/ezAutoSuggestion.js"></script>
-<link rel="stylesheet" href="src/ezAutoSuggestion/ezAutoSuggestion.css" />
+<link href="src/j-rating/j-rating.css" type="text/css" rel="stylesheet" />
+<script src="src/j-rating/j-rating.js"></script>
 
 Create a div, add an id and place inside of form. <form><div id="rating"></div></form>
 ```
