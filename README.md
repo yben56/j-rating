@@ -28,6 +28,8 @@ $("#rating").jRating({
 	active_color: "purple",
 	text: true
 });
+
+//If you wish to use this inside of user's edit page, simple pass {rating: 'user's rating value'} into it
 ```
 
 ```php
