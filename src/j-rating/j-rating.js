@@ -25,7 +25,8 @@ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 			size: false,
 			buttons_color: false,
 			active_color: false,
-			text: false
+			text: false,
+			rating: 0
 		}, options);
 		
 		//for css
@@ -61,22 +62,33 @@ DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
 		
 		//display text
 		if (defaults.text) {
-			$(this).append("<span class='text'>0/" + defaults.stars + "</span>");
+			$(this).append("<span class='text'>" + defaults.rating + "/" + defaults.stars + "</span>");
 		}
 		
 		//btn clicked
-		$(this).children("label").click(function(){
-			self.children("label").removeClass("on");
+		$(this).find("label").click(function(){
+			self.find("label").removeClass("on");
 			
 			var num = $(this).data("num");
 		
 			for (var i = 1; i <= num; i++) {
-				self.children("label:nth-of-type(" + i +")").addClass("on");
+				self.find("label:nth-of-type(" + i +")").addClass("on");
 			}
 			
 			if (defaults.text) {
-				self.children(".text").html(num + "/" + defaults.stars);
+				self.find(".text").html(num + "/" + defaults.stars);
 			}
 		});
+		
+		//for edit
+		if (defaults.rating != 0) {
+			self.find("#r" + defaults.rating).prop('checked', true);
+			
+			for (var i = 1; i <= defaults.rating; i++) {
+				self.find("label:nth-of-type(" + i +")").addClass("on");
+			}
+			
+			self.find(".text").html(defaults.rating + "/" + defaults.stars);
+		}
 	};
 })(jQuery);
